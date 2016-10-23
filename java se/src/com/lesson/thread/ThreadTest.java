@@ -13,12 +13,17 @@ public class ThreadTest {
 class Thread1 extends Thread {
 	
 	public Thread1(String name) {
-		System.out.println("hello thread: " + name);
+		System.out.println("hello thread1: " + name);
 	}
 	@Override
 	public void run() {
-		for (int i = 0; i < 100; i++) {
-			System.out.println("Hello " + i);
+		for (int i = 0; i < 10; i++) {
+			try {
+				Thread.sleep((long) (Math.random() * 1000));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Thread1 " + i);
 		}
 	}
 }
@@ -26,12 +31,17 @@ class Thread1 extends Thread {
 class Thread2 extends Thread {
 	
 	public Thread2(String name) {
-		System.out.println("haha thread: " + name);
+		System.out.println("haha thread2: " + name);
 	}
 	@Override
 	public void run() {
-		for (int i = 0; i < 100; i++) {
-			System.out.println("world " + i);
+		for (int i = 0; i < 10; i++) {
+			try {
+				Thread.sleep((long) (Math.random() * 1000));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Thread2 " + i);
 		}
 		
 	}

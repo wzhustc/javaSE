@@ -14,16 +14,26 @@ public class ThreadTest2 {
 
 class Thread3 implements Runnable {
 	public void run() {
-		for (int i = 0; i < 100; i++) {
-			System.out.println("hello " + i);
+		for (int i = 0; i < 10; i++) {
+			try {
+				Thread.sleep((long) (Math.random() * 1000));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Thread3: " + i);
 		}
 	}
 }
 
 class Thread4 implements Runnable {
 	public void run() {
-		for (int i = 0; i < 100; i++) {
-			System.out.println("world " + i);
+		for (int i = 0; i < 10; i++) {
+			try {
+				Thread.sleep((long) (Math.random() * 1000));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Thread4: " + i);
 		}
 	}
 }
