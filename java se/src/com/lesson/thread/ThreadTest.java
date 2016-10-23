@@ -23,7 +23,7 @@ class Thread1 extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("Thread1 " + i);
+			System.out.println(Thread.currentThread().getName() + " : " + i);
 		}
 	}
 }
@@ -41,7 +41,7 @@ class Thread2 extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("Thread2 " + i);
+			System.out.println(Thread.currentThread().getName() + " : " + i);
 		}
 		
 	}
