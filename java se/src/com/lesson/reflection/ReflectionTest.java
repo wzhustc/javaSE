@@ -7,7 +7,7 @@ public class ReflectionTest {
 	
 	public static void main(String[] args) throws Exception {
 		
-		Class<?> classType = Class.forName("java.lang.Thread");
+		Class<?> classType = Class.forName("java.lang.Reflection");
 		
 		Method[] methods = classType.getDeclaredMethods();
 		

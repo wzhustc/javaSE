@@ -1,7 +1,12 @@
 package com.lesson.thread;
 
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class ThreadTest {
 	public static void main(String[] args) {
+		ReentrantLock lock = new ReentrantLock();
+		ThreadPoolExecutor tpe = new ThreadPoolExecutor(0, 0, 0, null, null);
 		Thread1 t1 = new Thread1("1");
 		Thread2 t2 = new Thread2("2");
 		
