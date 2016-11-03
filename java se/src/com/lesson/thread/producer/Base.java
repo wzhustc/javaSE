@@ -1,4 +1,4 @@
-package com.lesson.thread.proandcon;
+package com.lesson.thread.producer;
 /**
  * 仓库类，用来生产和消费的一个共享区。生产者生产好放进来，消费者从这里面取出去消费。
  * @author ZhangWei

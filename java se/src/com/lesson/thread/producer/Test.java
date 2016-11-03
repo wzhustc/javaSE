@@ -1,4 +1,4 @@
-package com.lesson.thread.proandcon;
+package com.lesson.thread.producer;
 
 public class Test {
 	public static void main(String[] args) {
