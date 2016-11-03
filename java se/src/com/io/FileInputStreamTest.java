@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 public class FileInputStreamTest {
 	public static void main(String[] args) throws Exception {
 		
-		FileInputStream fis = new FileInputStream("c:/test.txt");
+		FileInputStream fis = new FileInputStream("test.txt");
 		
 		byte[] buffer = new byte[200];
 		int length = 0;
