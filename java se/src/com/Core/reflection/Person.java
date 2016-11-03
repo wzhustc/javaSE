@@ -1,6 +1,19 @@
 package com.Core.reflection;
 
+import java.util.ArrayList;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 public class Person {
+	
+	Lock lock = new ReentrantLock();
+	
+	ConcurrentHashMap chm = new ConcurrentHashMap();
+	ReentrantReadWriteLock rrw = new ReentrantReadWriteLock();
+	
+	ArrayList list = new ArrayList();
 	private String name;
 	private int age;
 	

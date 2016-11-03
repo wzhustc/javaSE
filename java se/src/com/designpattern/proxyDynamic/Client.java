@@ -2,9 +2,29 @@ package com.designpattern.proxyDynamic;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.TreeSet;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Client {
 	public static void main(String[] args) {
+		
+		ArrayList alist = new ArrayList();
+		
+		TreeSet ts = new TreeSet();
+		
+		ConcurrentHashMap cs = new ConcurrentHashMap<>();
+		
+		HashMap map = new HashMap();
+		
+		Hashtable ht = new Hashtable();
+		
+		LinkedList list = new LinkedList<>();
+		
+		
 		
 		Subject realSubject = new RealSubject();
 		
